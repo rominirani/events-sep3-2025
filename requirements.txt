@@ -1,0 +1,6 @@
+Generate a website for a 1-day event filled with technical talks. There are going to be 6 talks in a single track of 1 hour each. Each talk has the following information: title, 1 or maximum of 2 speakers, category (1 or maximum of 3 keywords), duration and a description. The website has a single page where users can see the schedule for the entire day with the timings. There will be one lunch break of an hour and the event starts at 10:00 AM. Keep a 10 minute transition between talks. I would like to use Node.js on the server side and standard HTML, JavaScript and CSS on the front-end. The users should be able to search the talks based on category.
+
+I would like you to proceed in the following way: 
+1. Plan out how you would design and code this application.
+2. Ask me for any clarifications along the way.
+3. Once I am fine with it, do generate the code and provide me instructions to run and test locally. 
