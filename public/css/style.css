@@ -65,3 +65,13 @@ main {
   padding: 0.25rem 0.5rem;
   border-radius: 5px;
 }
+
+#loading-indicator {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
+}

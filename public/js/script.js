@@ -1,13 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
   const scheduleContainer = document.getElementById('schedule');
   const searchInput = document.getElementById('searchInput');
+  const loadingIndicator = document.getElementById('loading-indicator');
   let talks = [];
+
+  // Hide schedule initially
+  scheduleContainer.classList.add('hidden');
 
   fetch('/api/talks')
     .then(response => response.json())
     .then(data => {
       talks = data;
       renderSchedule(talks);
+      // Hide loading indicator and show schedule
+      loadingIndicator.classList.add('hidden');
+      scheduleContainer.classList.remove('hidden');
     });
 
   searchInput.addEventListener('input', (e) => {
